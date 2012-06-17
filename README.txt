@@ -1,1 +1,1 @@
-My First Sample Commit for GIT
+The MOOKII project is a web-based trading system, intended as a system demo for trading of securities, but flexible enough to be an all-purpose trading system.  It is made from TurboGears, SQLAlchemy, and Python, with a demo SQLite database. It was made as a collaboration effort by Dakila Reyes II and Edwin Tumbaga.
