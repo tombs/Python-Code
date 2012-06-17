@@ -1,0 +1,55 @@
+Login:
+
+ Users
+  - number of attempts.
+  - upon successfull login redirects to page depending on 'user type'
+  - redirects to password resets when needed, password history
+ Monitoring
+  - show attempts and failures, plus session expiration
+  - Must be able to unlock, lock, reset user password
+
+User as Auctioneer/Seller of Goods:
+  - all 'regular' users can create auctions
+  - each user will have semi admin monitoring tool for their acutions
+
+User as Bidder:
+  - being a bidder means you must be able track your bids and bid history
+  - must be notified when you won the bidding or when your bid got outbidded
+  - must be able to cancel your bid
+  - must be allowed to have a bidding strategy such that it minimize your bid
+
+  Credit
+    - for every bid, credit must be sufficient to allow to bid
+    - for every lost and finished bid, the credit goes back
+
+Items:
+  - user should have the ability to indicate bidding increments
+  - outright purchase option and its price
+
+Auction:
+  - indicator if public or not,
+  - capability to set the group of users who are allowed to bid
+  - start time of auction
+  - end time of auction
+
+Security:
+  - identification and authorization are handled by username and passwords
+  - authorization will be based on what items, auction a user is allowed to use, bid and  participate in
+
+
+
+Scenarios/User stories:
+
+A visitor wanting to join to sell/auction and bid:
+Mo fires up his browser and surfs. Chancing upon the auction site and became intrigued. After finding out more, he clicks the register button, fills up the required information then gotten a confirmation (email or otherwise).  Mo logs in and was presented with the tools for creating auctions and a search tool for active auctions.
+
+  acceptance test - once registeration is successful, confirmation recieved, logging in will direct to the tools page. Improper registration indicates the fields that are not correctly filled up.
+
+Creating your first auction:
+Mo decided that he wants to do business by selling his delicious tapa. He proceeded to the auction tools and clicked on the create new auction. A few information are required/option like 3D image/s of the item, description, start of auction, end time of auction, bid increments, public(anyone can bid) or not(by invitation only), and a choice for outright purchase and the outright price. He then proceeds to write an announcement and send to the public announce page or if by invitation to the selected people or group.
+
+
+  acceptance test - after filling up the required info, an announcement will be sent to potential bidders, or announcement publicly. auction is started and only accessible to participants during the period of start time and end time.
+
+Invites only auction:
+Mo sends an announcement with all the shebangs to invite a group people to bid for his different kinds of books. He invited his relatives, friends and classmates.

@@ -1,0 +1,3 @@
+[console_scripts]
+start-mookii = mookii.commands:start
+
